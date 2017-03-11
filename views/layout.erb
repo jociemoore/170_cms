@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/cms.css">
+  </head>
+  <body>
+    <% if session[:error] %>
+      <div class="message">
+        <p><%= session.delete(:error) %></p>
+      </div>
+    <% end %>
+
+    <% if session[:message] %>
+      <div class="message">
+        <p><%= session.delete(:message) %></p>
+      </div>
+    <% end %>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<ul>
+  <% @files.each do |file| %>
+    <% if !File.directory?(file) && !File.fnmatch('.*', file)%>
+      <li>
+        <a href="/<%= file %>"><%= file %></a>
+        <a href="/<%= file %>/edit">Edit</a>
+        <form class="inline" action="/<%= file %>/delete" method="post">
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+<a href="/new">New Document</a>
+<% if session[:username] %>
+  <form action="/logout" method="post">
+    <label><em>Signed in as <%= session[:username] %></em></label>
+    <button class="inline" type="submit">Sign Out</button>
+  </form>
+<% else %>
+  <form action="/login" method="post">
+    <button class="inline" type="submit">Sign In</button>
+  </form>
+  <form action="/signup" method="post">
+    <button type="submit">Sign Up</button>
+  </form>
+<% end %>

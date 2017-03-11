@@ -1,0 +1,21 @@
+Ruby 2.4.0 Released
+
+Improve the internal structure of hash table (st_table) by introducing open addressing and an inclusion order array. 
+
+Binding#irb: Start a REPL session similar to binding.pry
+
+Unify Fixnum and Bignum into Integer
+
+String supports Unicode case mappings
+
+
+Performance improvements:
+[x, y].max and [x, y].min are optimized to not create a temporary array under certain conditions.
+
+Added Regexp#match?, which executes a regexp match without creating a back reference object and changing $~ to reduce object allocation.
+
+
+Debugging: 
+Thread#report_on_exception and Thread.report_on_exception
+
+Thread deadlock detection now shows threads with their backtrace and dependency

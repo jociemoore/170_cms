@@ -1,0 +1,8 @@
+---
+developer: "$2a$10$f.QsOBoRqDgGechXhmuAZOjOV/9S/dW1wU0JIZbN3O.7b3PurZFoO"
+FreeWilly: !ruby/string:BCrypt::Password
+  str: "$2a$10$F3.Ql0/vGXw1Zs54nNEyuuDOwnTIeNGbmoLnconYIwzkR/yRlebBS"
+  version: 2a
+  cost: 10
+  salt: "$2a$10$F3.Ql0/vGXw1Zs54nNEyuu"
+  checksum: DOwnTIeNGbmoLnconYIwzkR/yRlebBS

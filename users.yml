@@ -1,0 +1,8 @@
+---
+admin: "$2a$10$09ou/Slbpqku4lxSIgMxyedSqzDD76mBWVKQ/Vp3sHbMmTJ/86VCG"
+Ironman: !ruby/string:BCrypt::Password
+  str: "$2a$10$mtDseabO3rEFOEJsN2ikVOBseDRzppnKx2OMHkNijyDUuZAG8gsue"
+  version: 2a
+  cost: 10
+  salt: "$2a$10$mtDseabO3rEFOEJsN2ikVO"
+  checksum: BseDRzppnKx2OMHkNijyDUuZAG8gsue

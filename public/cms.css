@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  padding: 1em;
+}
+
+.inline {
+  display: inline;
+}
+
+.login-status {
+  font-style: italic;
+}
+
+.message {
+  padding: 10px;
+  background: #FFFF99;
+}
