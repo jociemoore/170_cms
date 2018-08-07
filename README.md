@@ -1,8 +1,3 @@
-# 170 Web Development: File-based Content Management System
+# Content Management System
 
-Skills practiced in the lesson include:
-* Implementing features based on high-level, user-oriented requirements 
-* Using Ruby File and IO Classes
-* Converting Markdown to HTML with Redcarpet
-* Testing Sinatra Apps with Rack Library
-* Considering Security Issues
+This is a basic CMS, which stores content in the filesystem instead of a database. I used this project to practice implementing features based on high-level requirements, working with the Ruby File and IO classes, converting markdown to HTML with Redcarpet, testing a Sinatra app with the Rack library, and considering security issues.
